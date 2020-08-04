@@ -105,7 +105,7 @@ static NSString *settingsPath = @"/var/mobile/Library/Preferences/com.gilshahar7
           dateLabel.text =[dateFormatter stringFromDate:date];
         }
         [dateLabel sizeToFit];
-        [dateFormatter release];
+
       }
     }
   }
@@ -196,7 +196,7 @@ static NSString *settingsPath = @"/var/mobile/Library/Preferences/com.gilshahar7
           dateLabel.text =[dateFormatter stringFromDate:date];
         }
         [dateLabel sizeToFit];
-        [dateFormatter release];
+
       }
     }
   }
@@ -287,7 +287,7 @@ static NSString *settingsPath = @"/var/mobile/Library/Preferences/com.gilshahar7
           dateLabel.text =[dateFormatter stringFromDate:date];
         }
         [dateLabel sizeToFit];
-        [dateFormatter release];
+
       }
     }
   }
@@ -308,7 +308,7 @@ static NSString *settingsPath = @"/var/mobile/Library/Preferences/com.gilshahar7
 	NSRange amRange = [dateString rangeOfString:[formatter AMSymbol]];
 	NSRange pmRange = [dateString rangeOfString:[formatter PMSymbol]];
 	is24h = (amRange.location == NSNotFound && pmRange.location == NSNotFound);
-	[formatter release];
+
     if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0 && [[[UIDevice currentDevice] systemVersion] floatValue] < 11.0) {
         %init(iOS10);
     } else if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 11.0 && [[[UIDevice currentDevice] systemVersion] floatValue] < 12.0) {
